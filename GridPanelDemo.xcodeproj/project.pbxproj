@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		96128F51195596780072B720 /* bg1.png in Resources */ = {isa = PBXBuildFile; fileRef = 96128F48195596780072B720 /* bg1.png */; };
+		96128F52195596780072B720 /* bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 96128F49195596780072B720 /* bg2.png */; };
+		96128F53195596780072B720 /* bg3.png in Resources */ = {isa = PBXBuildFile; fileRef = 96128F4A195596780072B720 /* bg3.png */; };
+		96128F54195596780072B720 /* bg4.png in Resources */ = {isa = PBXBuildFile; fileRef = 96128F4B195596780072B720 /* bg4.png */; };
+		96128F55195596780072B720 /* bg5.png in Resources */ = {isa = PBXBuildFile; fileRef = 96128F4C195596780072B720 /* bg5.png */; };
+		96128F56195596780072B720 /* bg6.png in Resources */ = {isa = PBXBuildFile; fileRef = 96128F4D195596780072B720 /* bg6.png */; };
+		96128F57195596780072B720 /* CD_grid@156px.png in Resources */ = {isa = PBXBuildFile; fileRef = 96128F4E195596780072B720 /* CD_grid@156px.png */; };
+		96128F58195596780072B720 /* clock_grid@156px.png in Resources */ = {isa = PBXBuildFile; fileRef = 96128F4F195596780072B720 /* clock_grid@156px.png */; };
+		96128F59195596780072B720 /* coffee_grid@156px.png in Resources */ = {isa = PBXBuildFile; fileRef = 96128F50195596780072B720 /* coffee_grid@156px.png */; };
+		96128F5C195596820072B720 /* settings_grid@156px.png in Resources */ = {isa = PBXBuildFile; fileRef = 96128F5A195596820072B720 /* settings_grid@156px.png */; };
+		96128F5D195596820072B720 /* things_grid@156px.png in Resources */ = {isa = PBXBuildFile; fileRef = 96128F5B195596820072B720 /* things_grid@156px.png */; };
+		96128F5F195596880072B720 /* message_grid@156px.png in Resources */ = {isa = PBXBuildFile; fileRef = 96128F5E195596880072B720 /* message_grid@156px.png */; };
+		969282A51952C92A00DD9A7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969282A41952C92A00DD9A7C /* AppDelegate.swift */; };
+		969282A71952C92A00DD9A7C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 969282A61952C92A00DD9A7C /* Images.xcassets */; };
+		969282B31952C92A00DD9A7C /* GridPanelDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969282B21952C92A00DD9A7C /* GridPanelDemoTests.swift */; };
+		969282BD1952C94900DD9A7C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969282BC1952C94900DD9A7C /* HomeViewController.swift */; };
+		969282C31952D23700DD9A7C /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969282C21952D23700DD9A7C /* UIColor+Extension.swift */; };
+		969282C61952D37400DD9A7C /* ViewConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969282C51952D37400DD9A7C /* ViewConstants.swift */; };
+		96EEDC7C19555F8800403BBA /* PanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EEDC7B19555F8800403BBA /* PanelView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		969282AD1952C92A00DD9A7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 969282971952C92A00DD9A7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9692829E1952C92A00DD9A7C;
+			remoteInfo = GridPanelDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		96128F48195596780072B720 /* bg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg1.png; sourceTree = "<group>"; };
+		96128F49195596780072B720 /* bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg2.png; sourceTree = "<group>"; };
+		96128F4A195596780072B720 /* bg3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg3.png; sourceTree = "<group>"; };
+		96128F4B195596780072B720 /* bg4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg4.png; sourceTree = "<group>"; };
+		96128F4C195596780072B720 /* bg5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg5.png; sourceTree = "<group>"; };
+		96128F4D195596780072B720 /* bg6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg6.png; sourceTree = "<group>"; };
+		96128F4E195596780072B720 /* CD_grid@156px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CD_grid@156px.png"; sourceTree = "<group>"; };
+		96128F4F195596780072B720 /* clock_grid@156px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clock_grid@156px.png"; sourceTree = "<group>"; };
+		96128F50195596780072B720 /* coffee_grid@156px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "coffee_grid@156px.png"; sourceTree = "<group>"; };
+		96128F5A195596820072B720 /* settings_grid@156px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings_grid@156px.png"; sourceTree = "<group>"; };
+		96128F5B195596820072B720 /* things_grid@156px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "things_grid@156px.png"; sourceTree = "<group>"; };
+		96128F5E195596880072B720 /* message_grid@156px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "message_grid@156px.png"; sourceTree = "<group>"; };
+		9692829F1952C92A00DD9A7C /* GridPanelDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GridPanelDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		969282A31952C92A00DD9A7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		969282A41952C92A00DD9A7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		969282A61952C92A00DD9A7C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		969282AC1952C92A00DD9A7C /* GridPanelDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GridPanelDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		969282B11952C92A00DD9A7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		969282B21952C92A00DD9A7C /* GridPanelDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridPanelDemoTests.swift; sourceTree = "<group>"; };
+		969282BC1952C94900DD9A7C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		969282BE1952C99D00DD9A7C /* GridPanelDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GridPanelDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		969282C21952D23700DD9A7C /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		969282C51952D37400DD9A7C /* ViewConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewConstants.swift; sourceTree = "<group>"; };
+		969282C819532A7C00DD9A7C /* testPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = testPlayground.playground; sourceTree = "<group>"; };
+		96EEDC7B19555F8800403BBA /* PanelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanelView.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.simpleColoring; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9692829C1952C92A00DD9A7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		969282A91952C92A00DD9A7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		96128F4719556DF40072B720 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				96128F5E195596880072B720 /* message_grid@156px.png */,
+				96128F5A195596820072B720 /* settings_grid@156px.png */,
+				96128F5B195596820072B720 /* things_grid@156px.png */,
+				96128F48195596780072B720 /* bg1.png */,
+				96128F49195596780072B720 /* bg2.png */,
+				96128F4A195596780072B720 /* bg3.png */,
+				96128F4B195596780072B720 /* bg4.png */,
+				96128F4C195596780072B720 /* bg5.png */,
+				96128F4D195596780072B720 /* bg6.png */,
+				96128F4E195596780072B720 /* CD_grid@156px.png */,
+				96128F4F195596780072B720 /* clock_grid@156px.png */,
+				96128F50195596780072B720 /* coffee_grid@156px.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		969282961952C92A00DD9A7C = {
+			isa = PBXGroup;
+			children = (
+				969282A11952C92A00DD9A7C /* GridPanelDemo */,
+				969282AF1952C92A00DD9A7C /* GridPanelDemoTests */,
+				969282A01952C92A00DD9A7C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		969282A01952C92A00DD9A7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9692829F1952C92A00DD9A7C /* GridPanelDemo.app */,
+				969282AC1952C92A00DD9A7C /* GridPanelDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		969282A11952C92A00DD9A7C /* GridPanelDemo */ = {
+			isa = PBXGroup;
+			children = (
+				96128F4719556DF40072B720 /* images */,
+				969282C719532A6900DD9A7C /* playground */,
+				969282C11952D21700DD9A7C /* extension */,
+				96EEDC7A19555F6A00403BBA /* controller */,
+				96EEDC7919555F6600403BBA /* view */,
+				969282C41952D36500DD9A7C /* constants */,
+				969282A41952C92A00DD9A7C /* AppDelegate.swift */,
+				969282BC1952C94900DD9A7C /* HomeViewController.swift */,
+				969282BE1952C99D00DD9A7C /* GridPanelDemo-Bridging-Header.h */,
+				969282A61952C92A00DD9A7C /* Images.xcassets */,
+				969282A21952C92A00DD9A7C /* Supporting Files */,
+			);
+			path = GridPanelDemo;
+			sourceTree = "<group>";
+		};
+		969282A21952C92A00DD9A7C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				969282A31952C92A00DD9A7C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		969282AF1952C92A00DD9A7C /* GridPanelDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				969282B21952C92A00DD9A7C /* GridPanelDemoTests.swift */,
+				969282B01952C92A00DD9A7C /* Supporting Files */,
+			);
+			path = GridPanelDemoTests;
+			sourceTree = "<group>";
+		};
+		969282B01952C92A00DD9A7C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				969282B11952C92A00DD9A7C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		969282C11952D21700DD9A7C /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				969282C21952D23700DD9A7C /* UIColor+Extension.swift */,
+			);
+			name = extension;
+			sourceTree = "<group>";
+		};
+		969282C41952D36500DD9A7C /* constants */ = {
+			isa = PBXGroup;
+			children = (
+				969282C51952D37400DD9A7C /* ViewConstants.swift */,
+			);
+			name = constants;
+			sourceTree = "<group>";
+		};
+		969282C719532A6900DD9A7C /* playground */ = {
+			isa = PBXGroup;
+			children = (
+				969282C819532A7C00DD9A7C /* testPlayground.playground */,
+			);
+			name = playground;
+			sourceTree = "<group>";
+		};
+		96EEDC7919555F6600403BBA /* view */ = {
+			isa = PBXGroup;
+			children = (
+				96EEDC7B19555F8800403BBA /* PanelView.swift */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		96EEDC7A19555F6A00403BBA /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9692829E1952C92A00DD9A7C /* GridPanelDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 969282B61952C92A00DD9A7C /* Build configuration list for PBXNativeTarget "GridPanelDemo" */;
+			buildPhases = (
+				9692829B1952C92A00DD9A7C /* Sources */,
+				9692829C1952C92A00DD9A7C /* Frameworks */,
+				9692829D1952C92A00DD9A7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GridPanelDemo;
+			productName = GridPanelDemo;
+			productReference = 9692829F1952C92A00DD9A7C /* GridPanelDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		969282AB1952C92A00DD9A7C /* GridPanelDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 969282B91952C92A00DD9A7C /* Build configuration list for PBXNativeTarget "GridPanelDemoTests" */;
+			buildPhases = (
+				969282A81952C92A00DD9A7C /* Sources */,
+				969282A91952C92A00DD9A7C /* Frameworks */,
+				969282AA1952C92A00DD9A7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				969282AE1952C92A00DD9A7C /* PBXTargetDependency */,
+			);
+			name = GridPanelDemoTests;
+			productName = GridPanelDemoTests;
+			productReference = 969282AC1952C92A00DD9A7C /* GridPanelDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		969282971952C92A00DD9A7C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = jason;
+				TargetAttributes = {
+					9692829E1952C92A00DD9A7C = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					969282AB1952C92A00DD9A7C = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 9692829E1952C92A00DD9A7C;
+					};
+				};
+			};
+			buildConfigurationList = 9692829A1952C92A00DD9A7C /* Build configuration list for PBXProject "GridPanelDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 969282961952C92A00DD9A7C;
+			productRefGroup = 969282A01952C92A00DD9A7C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9692829E1952C92A00DD9A7C /* GridPanelDemo */,
+				969282AB1952C92A00DD9A7C /* GridPanelDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9692829D1952C92A00DD9A7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96128F58195596780072B720 /* clock_grid@156px.png in Resources */,
+				96128F5C195596820072B720 /* settings_grid@156px.png in Resources */,
+				96128F55195596780072B720 /* bg5.png in Resources */,
+				96128F52195596780072B720 /* bg2.png in Resources */,
+				96128F5F195596880072B720 /* message_grid@156px.png in Resources */,
+				96128F54195596780072B720 /* bg4.png in Resources */,
+				96128F51195596780072B720 /* bg1.png in Resources */,
+				96128F57195596780072B720 /* CD_grid@156px.png in Resources */,
+				96128F53195596780072B720 /* bg3.png in Resources */,
+				969282A71952C92A00DD9A7C /* Images.xcassets in Resources */,
+				96128F56195596780072B720 /* bg6.png in Resources */,
+				96128F5D195596820072B720 /* things_grid@156px.png in Resources */,
+				96128F59195596780072B720 /* coffee_grid@156px.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		969282AA1952C92A00DD9A7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9692829B1952C92A00DD9A7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				969282C31952D23700DD9A7C /* UIColor+Extension.swift in Sources */,
+				969282A51952C92A00DD9A7C /* AppDelegate.swift in Sources */,
+				969282C61952D37400DD9A7C /* ViewConstants.swift in Sources */,
+				969282BD1952C94900DD9A7C /* HomeViewController.swift in Sources */,
+				96EEDC7C19555F8800403BBA /* PanelView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		969282A81952C92A00DD9A7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				969282B31952C92A00DD9A7C /* GridPanelDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		969282AE1952C92A00DD9A7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9692829E1952C92A00DD9A7C /* GridPanelDemo */;
+			targetProxy = 969282AD1952C92A00DD9A7C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		969282B41952C92A00DD9A7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		969282B51952C92A00DD9A7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		969282B71952C92A00DD9A7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = GridPanelDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GridPanelDemo/GridPanelDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		969282B81952C92A00DD9A7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = GridPanelDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GridPanelDemo/GridPanelDemo-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		969282BA1952C92A00DD9A7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GridPanelDemo.app/GridPanelDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GridPanelDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		969282BB1952C92A00DD9A7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GridPanelDemo.app/GridPanelDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GridPanelDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9692829A1952C92A00DD9A7C /* Build configuration list for PBXProject "GridPanelDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				969282B41952C92A00DD9A7C /* Debug */,
+				969282B51952C92A00DD9A7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		969282B61952C92A00DD9A7C /* Build configuration list for PBXNativeTarget "GridPanelDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				969282B71952C92A00DD9A7C /* Debug */,
+				969282B81952C92A00DD9A7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		969282B91952C92A00DD9A7C /* Build configuration list for PBXNativeTarget "GridPanelDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				969282BA1952C92A00DD9A7C /* Debug */,
+				969282BB1952C92A00DD9A7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 969282971952C92A00DD9A7C /* Project object */;
+}
