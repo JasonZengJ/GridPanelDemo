@@ -17,7 +17,6 @@ class PanelView:UIView {
     
     var isFrontView:Bool = true
     
-    
     init(bgColor:UIColor) {
         super.init(frame: CGRectMake(0, 0, 0, 0))
         self.backgroundColor          = bgColor
@@ -75,8 +74,8 @@ class PanelView:UIView {
         var label:UILabel   = UILabel()
         label.textColor     = UIColor.whiteColor()
         label.text          = title
-        label.lineBreakMode = NSLineBreakMode.ByWordWrapping
         label.font          = UIFont.systemFontOfSize(17)
+        label.lineBreakMode = NSLineBreakMode.ByWordWrapping
         label.numberOfLines = 0
         
         label.setTranslatesAutoresizingMaskIntoConstraints(false)
