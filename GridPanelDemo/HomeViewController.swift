@@ -106,7 +106,6 @@ class HomeViewController :UIViewController {
         )
         dispatch_after(dispatch_time_t(flipDuration / 2) * 1000, dispatch_get_main_queue(), { () -> Void in
             (sender.view as PanelView).changeView()
-            println("here");
         })
         
     }
