@@ -1,6 +1,6 @@
 Introduction
 ========================
-It's
+
 
 
 Effects
