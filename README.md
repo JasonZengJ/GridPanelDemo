@@ -1,4 +1,5 @@
 ##Introduction
+A demo for the Auto Layout.It's written in Swift and looks not bad ：）.
 
 
 
