@@ -11,8 +11,8 @@
 
 <li> HD Front View image
 
-<img src="https://raw.githubusercontent.com/JasonZengJ/GridPanelDemo/master/view1.gif" alt="GridPanelDemo" title="GridPanelDemo" style="display:block;">
+<img src="https://raw.githubusercontent.com/JasonZengJ/GridPanelDemo/master/view1.png" alt="GridPanelDemo" width="238" title="GridPanelDemo" style="display:block;">
 
 <li> HD Back View image
 
-<img src="https://raw.githubusercontent.com/JasonZengJ/GridPanelDemo/master/view2.gif" alt="GridPanelDemo" title="GridPanelDemo" style="display:block;">
+<img src="https://raw.githubusercontent.com/JasonZengJ/GridPanelDemo/master/view2.png" alt="GridPanelDemo" width="238" title="GridPanelDemo" style="display:block;">
