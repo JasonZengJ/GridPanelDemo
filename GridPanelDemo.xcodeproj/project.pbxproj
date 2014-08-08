@@ -131,7 +131,6 @@
 				96EEDC7919555F6600403BBA /* view */,
 				969282C41952D36500DD9A7C /* constants */,
 				969282A41952C92A00DD9A7C /* AppDelegate.swift */,
-				969282BC1952C94900DD9A7C /* HomeViewController.swift */,
 				969282BE1952C99D00DD9A7C /* GridPanelDemo-Bridging-Header.h */,
 				969282A61952C92A00DD9A7C /* Images.xcassets */,
 				969282A21952C92A00DD9A7C /* Supporting Files */,
@@ -199,6 +198,7 @@
 		96EEDC7A19555F6A00403BBA /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				969282BC1952C94900DD9A7C /* HomeViewController.swift */,
 			);
 			name = controller;
 			sourceTree = "<group>";
