@@ -15,7 +15,11 @@ class HomeViewController :UIViewController {
     var view5:UIView!
     var view6:UIView!
     
-    init(nibName nibNameOrNil: String!, bundle nibBundleOrNil: NSBundle!) {
+    required init(coder aDecoder: NSCoder!) {
+        fatalError("NSCoding not supported")
+    }
+    
+    override init(nibName nibNameOrNil: String!, bundle nibBundleOrNil: NSBundle!) {
         
         super.init(nibName: nibName, bundle: nibBundle)
         self.view.backgroundColor = UIColor(hex: 0x222222, alpha: 0.9)

@@ -17,6 +17,10 @@ class PanelView:UIView {
     
     var isFrontView:Bool = true
     
+    required init(coder aDecoder: NSCoder!) {
+        fatalError("NSCoding not supported")
+    }
+    
     init(bgColor:UIColor) {
         super.init(frame: CGRectMake(0, 0, 0, 0))
         self.backgroundColor          = bgColor
