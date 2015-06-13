@@ -10,29 +10,29 @@
 	<string>GridPanelDemo</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>38524AD4-E29A-456F-A16A-6F70DE54CD52</key>
+		<key>59CEC3EAB29FCD5ED11CDC9D9098B018FE1AF88C</key>
 		<string>https://github.com/JasonZengJ/GridPanelDemo.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>GridPanelDemo.xcodeproj/project.xcworkspace</string>
+	<string>GridPanelDemo.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>38524AD4-E29A-456F-A16A-6F70DE54CD52</key>
+		<key>59CEC3EAB29FCD5ED11CDC9D9098B018FE1AF88C</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/JasonZengJ/GridPanelDemo.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>38524AD4-E29A-456F-A16A-6F70DE54CD52</string>
+	<string>59CEC3EAB29FCD5ED11CDC9D9098B018FE1AF88C</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>38524AD4-E29A-456F-A16A-6F70DE54CD52</string>
+			<string>59CEC3EAB29FCD5ED11CDC9D9098B018FE1AF88C</string>
 			<key>IDESourceControlWCCName</key>
 			<string>GridPanelDemo</string>
 		</dict>

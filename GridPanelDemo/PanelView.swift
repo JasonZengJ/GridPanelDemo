@@ -13,11 +13,11 @@ class PanelView:UIView {
     var frontViewBackgroundColor:UIColor!
     
     var backViewBackgroundColor:UIColor!
-    var backViewTitle:NSString!
+    var backViewTitle:String!
     
     var isFrontView:Bool = true
     
-    required init(coder aDecoder: NSCoder!) {
+    required init(coder aDecoder: NSCoder) {
         fatalError("NSCoding not supported")
     }
     
@@ -32,7 +32,7 @@ class PanelView:UIView {
         
         self.removeAllSubviewsAndConstraints()
         for view :AnyObject in self.frontSubviews {
-            self.addSubview(view as UIView)
+            self.addSubview(view as! UIView)
         }
         self.addConstraints(frontViewConstraints)
         self.backgroundColor = frontViewBackgroundColor
