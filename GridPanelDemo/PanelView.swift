@@ -25,7 +25,8 @@ class PanelView:UIView {
         super.init(frame: CGRectMake(0, 0, 0, 0))
         self.backgroundColor          = bgColor
         self.frontViewBackgroundColor = bgColor
-        self.setTranslatesAutoresizingMaskIntoConstraints(false)
+        //self.setTranslatesAutoresizingMaskIntoConstraints(false)
+        self.translatesAutoresizingMaskIntoConstraints = false
     }
     
     func changeToFrontView() {
@@ -34,11 +35,12 @@ class PanelView:UIView {
         for view :AnyObject in self.frontSubviews {
             self.addSubview(view as! UIView)
         }
-        self.addConstraints(frontViewConstraints)
+        //self.addConstraints(frontViewConstraints)
+        self.addConstraints(frontViewConstraints as! [NSLayoutConstraint])
+        //self.addConstraint(frontViewConstraints as! NSLayoutConstraint)
         self.backgroundColor = frontViewBackgroundColor
-        
+
     }
-    
     func changeToBackView() {
         
         self.removeAllSubviewsAndConstraints()
@@ -52,7 +54,7 @@ class PanelView:UIView {
         for view : AnyObject in self.subviews {
             view.removeFromSuperview()
         }
-        self.removeConstraints(self.frontViewConstraints)
+        self.removeConstraints((self.frontViewConstraints as NSArray) as AnyObject as! [NSLayoutConstraint] )
     }
     
     func changeView() {
@@ -60,7 +62,7 @@ class PanelView:UIView {
         if self.isFrontView {
             
             self.frontSubviews = self.subviews
-            self.frontViewConstraints = self.constraints()
+            self.frontViewConstraints = self.constraints
             self.isFrontView = false
             self.changeToBackView()
             
@@ -75,25 +77,28 @@ class PanelView:UIView {
     
     func labelWithTitle(title:String,inPanelView:UIView) {
         
-        var label:UILabel   = UILabel()
+        let label:UILabel   = UILabel()
         label.textColor     = UIColor.whiteColor()
         label.text          = title
         label.font          = UIFont.systemFontOfSize(17)
         label.lineBreakMode = NSLineBreakMode.ByWordWrapping
         label.numberOfLines = 0
         
-        label.setTranslatesAutoresizingMaskIntoConstraints(false)
-        
+        //label.setTranslatesAutoresizingMaskIntoConstraints(false)
+        label.translatesAutoresizingMaskIntoConstraints = false
+
         inPanelView.addSubview(label)
         inPanelView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat(
             "H:|-35-[label]-35-|",
-            options: NSLayoutFormatOptions.AlignAllBaseline,
+            //options: NSLayoutFormatOptions.AlignAllBaseline,
+            options: NSLayoutFormatOptions(rawValue: 0),
             metrics: nil,
             views:["label":label]
         ))
         inPanelView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat(
             "V:|-40-[label]-40-|",
-            options: NSLayoutFormatOptions.AlignAllBaseline,
+            //options: NSLayoutFormatOptions.AlignAllBaseline,
+            options: NSLayoutFormatOptions(rawValue: 0),
             metrics: nil,
             views: ["label":label]))
     }
