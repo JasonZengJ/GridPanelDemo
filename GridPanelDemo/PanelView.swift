@@ -9,7 +9,7 @@
 class PanelView:UIView {
     
     var frontSubviews:Array<AnyObject>!
-    var frontViewConstraints:Array<AnyObject>!
+    var frontViewConstraints:Array<NSLayoutConstraint>!
     var frontViewBackgroundColor:UIColor!
     
     var backViewBackgroundColor:UIColor!
@@ -17,7 +17,7 @@ class PanelView:UIView {
     
     var isFrontView:Bool = true
     
-    required init(coder aDecoder: NSCoder!) {
+    required init?(coder aDecoder: NSCoder) {
         fatalError("NSCoding not supported")
     }
     
@@ -25,14 +25,14 @@ class PanelView:UIView {
         super.init(frame: CGRectMake(0, 0, 0, 0))
         self.backgroundColor          = bgColor
         self.frontViewBackgroundColor = bgColor
-        self.setTranslatesAutoresizingMaskIntoConstraints(false)
+        self.translatesAutoresizingMaskIntoConstraints = false
     }
     
     func changeToFrontView() {
         
         self.removeAllSubviewsAndConstraints()
         for view :AnyObject in self.frontSubviews {
-            self.addSubview(view as UIView)
+            self.addSubview(view as! UIView)
         }
         self.addConstraints(frontViewConstraints)
         self.backgroundColor = frontViewBackgroundColor
@@ -42,7 +42,7 @@ class PanelView:UIView {
     func changeToBackView() {
         
         self.removeAllSubviewsAndConstraints()
-        self.labelWithTitle(self.backViewTitle, inPanelView: self)
+        self.labelWithTitle(self.backViewTitle as String, inPanelView: self)
         self.backgroundColor = self.backViewBackgroundColor
         
     }
@@ -60,7 +60,7 @@ class PanelView:UIView {
         if self.isFrontView {
             
             self.frontSubviews = self.subviews
-            self.frontViewConstraints = self.constraints()
+            self.frontViewConstraints = self.constraints
             self.isFrontView = false
             self.changeToBackView()
             
@@ -75,14 +75,15 @@ class PanelView:UIView {
     
     func labelWithTitle(title:String,inPanelView:UIView) {
         
-        var label:UILabel   = UILabel()
+        let label:UILabel   = UILabel()
         label.textColor     = UIColor.whiteColor()
         label.text          = title
         label.font          = UIFont.systemFontOfSize(17)
         label.lineBreakMode = NSLineBreakMode.ByWordWrapping
+        label.textAlignment = NSTextAlignment.Center
         label.numberOfLines = 0
         
-        label.setTranslatesAutoresizingMaskIntoConstraints(false)
+        label.translatesAutoresizingMaskIntoConstraints = false
         
         inPanelView.addSubview(label)
         inPanelView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat(
