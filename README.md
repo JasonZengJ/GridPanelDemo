@@ -1,10 +1,10 @@
-##Introduction
+## Introduction
 A demo for the Auto Layout and Flip Animation.It's written in Swift and looks not bad ：）.
 
 
 
 
-##Effects
+## Effects
 
 <li> Flip animation
 
